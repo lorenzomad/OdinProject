@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazing website</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .header {
+            display: flex;
+        }
+
+        .header > div {
+            flex: 1;
+        }
+
+        .header > .logo {
+            flex: 2;
+        }
+
+        .main {
+            display: flex;
+        }
+
+        .main > div {
+            flex: 1 1 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .main > div > p {
+            flex: 1;
+        }
+
+        .main > div > button {
+            flex: 1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo"> Header Logo</div>
+        <div> Header Link One </div>
+        <div> Header Link Two </div>
+        <div> Header Link Three </div>
+    </div>
+
+    <div class="main">
+        <div>
+            <p class="hero">This website is awesome</p>
+            <p> This website has some subtext that goes here with lower font and the color has less contrast</p>
+            <div>
+                <button>Sign up</button> 
+            </div>
+        </div>
+        <div>
+            <p>This is a placeholder for an image</p>
+        </div>
+    </div>
+
+    <div class="carousel">
+        <p>Some Random Information</p>
+
+        <div>
+            <div class="gallery-item">
+                <div class="square"></div>
+                <p>This is some text under an image</p>
+            </div>
+            <div class="gallery-item">
+                <div class="square"></div>
+                <p>This is some text under an image</p>
+            </div>
+            <div class="gallery-item">
+                <div class="square"></div>
+                <p>This is some text under an image</p>
+            </div>
+            <div class="gallery-item">
+                <div class="square"></div>
+                <p>This is some text under an image</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="quote">
+        <p> 
+            This is a very inspiring quote, it was written by me when I was about 12 years old, now i'm older but i still live by it
+
+        </p>
+        <p class="author">Lorenzo Maddalena</p>
+    </div>
+
+    <div class="CTA">
+        <div>
+            <p>call to action, this is your time</p>
+            <p>this is your chance to change the world</p>
+        </div>
+        <div>
+            <button>sign up</button>
+        </div>
+    </div>
+</body>
+</html>
