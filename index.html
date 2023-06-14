@@ -6,8 +6,16 @@
     <title>Amazing website</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        button {
+            background-color: #3882F6;
+            border-radius: 10%;
+            border-style: solid;
+            border-color: white;
+        }
+        
         .header {
             display: flex;
+            background-color: #1f2937;
         }
 
         .header > div {
@@ -16,17 +24,47 @@
 
         .header > .logo {
             flex: 2;
+            color: #f9faf8;
+            font-size: 24px;
+
         }
 
+        
+
+
         .main {
+            background-color: #1f2937;
             display: flex;
+            align-items: center;
+        }
+
+        .main div {
+            font-size: 18px;
+            color: #e5e7eb;
+            flex: 1;
+            align-items: center;
+
+        }
+
+        .main > div >p {
+            flex: 1;
+
+        }
+
+
+
+        .hero {
+            color: #f9faf8;
+            font-size: 48px;
+            font-weight: bolder;
         }
 
         .main > div {
-            flex: 1 1 20%;
+            flex:  1 1 50%;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            border-style: solid;
         }
 
         .main > div > p {
@@ -35,6 +73,63 @@
 
         .main > div > button {
             flex: 1;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .gallery-item {
+            display: flex;
+            flex-direction: column;
+            flex: 1 1 20%;
+            justify-content: space-evenly;
+        }
+
+        .square {
+            border-style: solid;
+            border-width: 1px;
+            border-color: blue;
+            border-radius: 10%;
+            height: 90px;
+            width: 90px;
+        }
+
+        .quote {
+            background-color: #e5e7eb;
+            width: 80%;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            
+        }
+
+        .quote > div {
+            flex: 2;
+            font-style: italic;
+            color: #1f2937;
+        }
+        .author {
+            flex: 1;
+            align-self:last baseline;
+        }
+
+        .CTA {
+            width: 80%;
+            margin: auto;
+            border-radius: 3%;
+            display: flex;
+            align-items: center;
+            background-color: #3882F6;
+            justify-content: space-between;
+        }
+
+        .CTA > div{
+            flex: 1;
+            justify-content: center;
         }
         
     </style>
@@ -63,7 +158,7 @@
     <div class="carousel">
         <p>Some Random Information</p>
 
-        <div>
+        <div class="gallery">
             <div class="gallery-item">
                 <div class="square"></div>
                 <p>This is some text under an image</p>
@@ -84,11 +179,14 @@
     </div>
 
     <div class="quote">
-        <p> 
-            This is a very inspiring quote, it was written by me when I was about 12 years old, now i'm older but i still live by it
-
-        </p>
-        <p class="author">Lorenzo Maddalena</p>
+        <div>
+            <p> 
+                This is a very inspiring quote, it was written by me when I was about 12 years old, now i'm older but i still live by it
+            </p>
+        </div>
+        <div class="author">
+            <p > - Lorenzo Maddalena</p>
+        </div>
     </div>
 
     <div class="CTA">
